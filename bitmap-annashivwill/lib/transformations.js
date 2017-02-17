@@ -13,9 +13,11 @@ exports.exportImg = function(img) {
   });
 }
 
-exports.turnOrange = function orange(img) {
-  // img.colorpalette
-  exports.exportImg(img);
+exports.turnBlack = function orange(tableString) {
+  // console.log(tableString);
+  // console.log('f'.repeat(2048));
+  return '0'.repeat(2048);
+  // exports.exportImg(img);
 
 }
-///f
+//
