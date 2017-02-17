@@ -1,10 +1,8 @@
 'use strict';
 
 const fs = require('fs');
-const EE = require('events');
-const ee = new EE;
 
-var bitmap = {}
+module.exports = exports = {};
 
 function readContent(callback) {
   fs.readFile(`${__dirname}/../img/palette-bitmap.bmp`, function(err, data) {
