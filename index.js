@@ -109,7 +109,7 @@ let colorMapStart = 54;
 
 let singleColorStart = colorMapStart;
 
-for(let i = 0; i < 256; i++){
+for(let i = 0; i < bmp.numColors; i++){
   let singleColorArray = [];
   for(let j = singleColorStart; j < (singleColorStart + 4); j++){
     singleColorArray.push(bitmap.readUInt8(j));
