@@ -10,10 +10,9 @@ var Image = function(type, size, width, height, imageStart, pixelArray) {
   this.height = bitmap.readInt32LE(22);
   this.imageStart = bitmap.readInt32LE(10);
   this.pixelArray = bitmap.toString('hex', this.imageStart, this.size);
+  this.pixelTest = bitmap.toString('hex', 1078, 1082);
 };
 
 const bmp = new Image(bitmap);
 
-console.dir(bmp);
-
-console.log(typeof(Image.pixelArray));
+console.dir(bmp.pixelTest);
