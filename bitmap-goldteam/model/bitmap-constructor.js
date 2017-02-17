@@ -1,7 +1,7 @@
 'use strict';
 
 const fs = require('fs');
-const bitmap = fs.readFileSync(`${__dirname}/../img/palette-bitmap.bmp`);
+const bitmap = fs.readFile(`${__dirname}/../img/palette-bitmap.bmp`);
 
 var Image = function(type, size, width, height, imageStart, pixelArray) {
   this.type = bitmap.toString('utf-8', 0, 2);
