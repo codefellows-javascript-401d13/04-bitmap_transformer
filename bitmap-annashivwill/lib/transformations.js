@@ -18,9 +18,20 @@ exports.invert = function(bitmap) {
   return invertBuf;
 };
 
-// exports.redScale = function(data) {
-//   const redBuf = new Buffer(bitmap);
-//   for(var i = 54; i < 1078; i + 3) {
-//     var redBitmap = bitmap.fill('255', i, )
-//   }
-// }
+exports.redScale = function(bitmap) {
+  const redBuf = new Buffer(bitmap);
+  for(var i = 56; i < 1078; i += 4) {
+    redBuf.fill(255, i, i+1);
+  };
+  return redBuf;
+};
+
+exports.greyScale = function(bitmap) {
+  const greyBuf = new Buffer(bitmap);
+  for(var i = 54; i < 1078; i += 4) {
+    greyBuf.fill(greyBuf[i+1], i, i+1);
+    greyBuf.fill(greyBuf[i+1], i+1, i+2);
+    greyBuf.fill(greyBuf[i+1], i+2, i+3);
+  };
+  return greyBuf;
+}

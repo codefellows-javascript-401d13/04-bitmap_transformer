@@ -8,12 +8,18 @@ fs.readFile(`${__dirname}/img/palette-bitmap.bmp`, function(err, data) {
   const bitmap = data;
 
   fs.writeFile(`${__dirname}/img/inverted.bmp`, transformations.invert(bitmap), function(err, data) {
-    console.log('invert: ', transformations.invert(bitmap)[70]);
     if (err) throw err;
   });
 
   fs.writeFile(`${__dirname}/img/black.bmp`, transformations.turnBlack(bitmap), function(err, data) {
-    console.log('black: ', transformations.turnBlack(bitmap)[70]);
+    if (err) throw err;
+  });
+
+  fs.writeFile(`${__dirname}/img/red.bmp`, transformations.redScale(bitmap), function(err, data) {
+    if (err) throw err;
+  });
+
+  fs.writeFile(`${__dirname}/img/grey.bmp`, transformations.greyScale(bitmap), function(err, data) {
     if (err) throw err;
   });
 
