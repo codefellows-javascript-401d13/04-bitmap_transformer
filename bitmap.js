@@ -9,14 +9,6 @@ const Bitmap = require('./model/bitmap-constructor.js');
 
 fileHelper(`${__dirname}/img/palette-bitmap.bmp`, 'green', 'hello');
 
-
-
-
-
-
-
-
-
 // function transformPixel(colorArray, transformFn) {
 //   return colorArray.map(transformFn);
 // }
