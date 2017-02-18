@@ -1,5 +1,6 @@
 'use strict';
 
+
 module.exports = function Bitmap(buffer){
   this.head = buffer.toString('hex', 0, 54);
   let bitmapColorArray = [];
@@ -16,3 +17,4 @@ module.exports = function Bitmap(buffer){
   this.color = bitmapColorArray;
   this.pixel = buffer.toString('hex', 1078, 11078);
 };
+
