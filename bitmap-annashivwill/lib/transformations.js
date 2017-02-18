@@ -24,8 +24,8 @@ exports.turnBlack = function(tableString) {
 exports.invert = function(tableString) {
   var invStr = '';
   // console.log(tableString.length);
-  for (var i = 0; i < tableString.length + 2; i += 2) {
-    var hexStr = tableString.substring(i, i + 2);
+  for (var i = 0; i < tableString.length; i += 2) {
+    var hexStr = tableString.slice(i, i + 1);
     // console.log('hexStr:', hexStr);
 
     var intNum = parseInt('FF', 16) - parseInt(hexStr, 16);
@@ -41,7 +41,7 @@ exports.invert = function(tableString) {
     // console.log(i);
 
   }
-  // console.log(invStr.length);
+  console.log(invStr.length);
 
 
 }
