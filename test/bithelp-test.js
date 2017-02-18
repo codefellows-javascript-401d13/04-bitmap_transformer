@@ -1,12 +1,12 @@
 'use strict';
 
 const expect = require('chai').expect;
-const bitmapFileHelper = require ('../lib/zach-ee-sandbox.js');
+const bitmapFileHelper = require ('../lib/bitmap-helper.js');
 
 describe('fileReader', function(){
  describe(' file is being read', function(){
    it('should return file has been read', function(done){
-    bitmapFileHelper(`${__dirname}/../img/palette-bitmap.bmp`, function(err, data){
+    bitmapFileHelper.read(`${__dirname}/../img/palette-bitmap.bmp`, function(err, data){
     expect(data.numOfColors).to.equal(256);
     done();
     });
