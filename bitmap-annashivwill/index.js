@@ -20,15 +20,15 @@ fs.readFile(`${__dirname}/img/palette-bitmap.bmp`, function(err, data) {
   const colorpalette = bitmapString.slice(108, 2156);
 
   // Turn table black and save to Buffer String
-  bitmapString = bitmapString.replace(colorpalette, (transformations.turnBlack(colorpalette)));
+  bitmapString = bitmapString.replace(colorpalette, (transformations.invert(colorpalette)));
 
-  console.log(bitmapString.slice(108, 2156));
+  // console.log(bitmapString.slice(108, 2156));
 
   // Change back into Buffer
   const newBuffer = Buffer.from(bitmapString, 'hex');
 
   // Export new img
-  transformations.exportImg(newBuffer);
+  // transformations.exportImg(newBuffer);
 
 
 // ==================================
