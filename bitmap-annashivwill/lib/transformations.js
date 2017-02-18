@@ -6,7 +6,7 @@ const image = require(`${__dirname}/../index.js`);
 module.exports = exports = {};
 
 exports.turnBlack = function(bitmap) {
-  return bitmap.fill('0', 54, 1078);
+  return bitmap.fill('00', 54, 1078);
 };
 
 exports.invert = function(bitmap) {
