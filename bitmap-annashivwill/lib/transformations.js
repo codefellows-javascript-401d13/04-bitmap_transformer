@@ -26,21 +26,17 @@ exports.invert = function(tableString) {
   // console.log(tableString.length);
   for (var i = 0; i < tableString.length; i += 2) {
     var hexStr = tableString.slice(i, i + 1);
-    // console.log('hexStr:', hexStr.length);
 
     var intNum = parseInt('FF', 16) - parseInt(hexStr, 16);
     // console.log('after parseInt:', intNum.length);
 
     var hexNum = intNum.toString(16)
     // console.log('hexNum.tostr:', hexNum.length);
-    // console.log('==================');
 
     invStr += hexNum;
     // tableString.
 
 
   }
-  console.log('returned str:', invStr.length);
   return invStr;
-
 }
