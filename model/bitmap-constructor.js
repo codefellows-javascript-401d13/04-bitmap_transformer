@@ -6,7 +6,7 @@ const Bitmap = module.exports = function Bitmap(buffer, callback){
   this.headerSize = buffer.readInt32LE(14);
   this.imageSize = buffer.readInt32LE(34);
   this.numColors = buffer.readInt32LE(46);
-  this.head = buffer.toString('hex', 0, 54);
+  this.head = buffer.toString('hex', 0, 14 + this.headerSize);
   let bitmapColorArray = [];
   let colorMapStart = 14 + this.headerSize;
   let singleColorStart = colorMapStart;
@@ -53,8 +53,7 @@ Bitmap.blueTransform = function blueTransform(color) {
   return [255, blue(color[1], .5), blue(color[2], .5), color[3]];
 };
 Bitmap.grayTransform = function grayTransform(color) {
-  function gray(color, level) {
-    return Math.min(255, Math.floor(color * level));
-  }
-  return [gray(color[0], .15), gray(color[1], .1), gray(color[2], .12), color[3]];
+  let maxColor = color.reduce((max, channel) => Math.max(max, channel), 0);
+  let grayLevel = Math.round(maxColor * .7);
+  return [ grayLevel, grayLevel, grayLevel, color[3] ];
 };
