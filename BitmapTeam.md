@@ -64,59 +64,61 @@ How to use Bitmap Transformer
 <br> <br>
  
 <a name="usage">
-###Original Bitmap</a>
+###Original Bitmap
+</a>
 <br>
 <p align="center">
-<img src="img/palette-bitmap.bmp"</p>
-
+<img src="img/palette-bitmap.bmp">
+</p>
 <br>
 
 **This application will transform your an 8-bit color bitmap file into an inverted, bluescale, grayscale or a random colors version. Below are examples and commands to run the process.**
-
 <br>
-<br>
-
 
 <a name="invert">
 ###Inverted Bitmap Example
 </a>
-
 <br>
 <p align="center">
-<img src="img/invert-bitmap.bmp"> 
-<br><br> 
+<img src="img/invert-bitmap.bmp">
+<br>
 Inverses the colors of original image  
  (The inverse of a color is the most contrasting color of that color.)
- </p>
- <br>
+</p>
+
+<br>
+
 ***In the primary repository, enter the following command:***
 
-~~~~
-node index.js invert
+~~~~ 
+node index.j invert
 ~~~~
 <br><br>
 
 <a name="random">
 ###Random Bitmap Examples
 </a>
-
 <br>
 <p align="center">
 <img src="img/randbmpOne.bmp">
 <img src="img/randbmpTwo.bmp">		
 <img src="img/randbmpthree.bmp">
-<img src="img/randbmpfour.bmp">   
+<img src="img/randbmpfour.bmp">
 <br>
- A new version with random colors will be created. Pictures above are examples of possible versions. **versions may repeat
- </p>
+A new version with random colors will be created. Pictures above are examples of possible versions. **versions may repeat
+</p>
+
 <br>
 
 ***In the primary repository, enter the following command:***
 
+~~~~ 
+node index.j random
 ~~~~
-node index.js random
-~~~~
+
 <br><br>
+ 
+
 
 <a name="blue">
 ###Bluescale Bitmap Example
