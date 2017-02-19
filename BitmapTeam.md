@@ -66,7 +66,8 @@ How to use Bitmap Transformer
 <a name="usage">
 ###Original Bitmap</a>
 <br>
-<p align="center">![alt tag](img/palette-bitmap.bmp)</p>
+<p align="center">
+<img src="img/palette-bitmap.bmp"</p>
 
 <br>
 
@@ -80,10 +81,11 @@ How to use Bitmap Transformer
 </a>
 
 <br>
-<p align="center">![alt tag](img/invert-bitmap.bmp)
-
+<p align="center">
+<img src="img/invert-bitmap.bmp"> 
+<br><br> 
 Inverses the colors of original image  
- (The inverse of a color is the most contrasting color of that color.) 
+ (The inverse of a color is the most contrasting color of that color.)
  </p>
  <br>
 ***In the primary repository, enter the following command:***
@@ -100,12 +102,11 @@ node index.js invert
 
 <br>
 <p align="center">
-![alt tag](img/randbmpOne.bmp)
-![alt tag](img/randbmpTwo.bmp)
-![alt tag](img/randbmpthree.bmp)
-![alt tag](img/randbmpfour.bmp)
-
-
+<img src="img/randbmpOne.bmp">
+<img src="img/randbmpTwo.bmp">			
+<img src="img/randbmpthree.bmp">
+<img src="img/randbmpfour.bmp">   
+<br>
  A new version with random colors will be created. Pictures above are examples of possible versions. **versions may repeat</p>
 <br>
 
@@ -121,8 +122,9 @@ node index.js random
 </a>
 
 <br>
-<p align="center">![alt tag](img/bluescale-bitmap.bmp)
-
+<p align="center">
+<img src="img/bluescale-bitmap.bmp">
+<br>
 Changes original colors to blue colors pictured above</p>
 
 <br>
@@ -137,8 +139,9 @@ node index.js bluescale
 ###Grayscale Bitmap Example
 </a>
 <br>
-<p align="center">![alt tag](img/grayscale-bitmap.bmp)
-
+<p align="center">
+<img src="img/grayscale-bitmap.bmp">
+<br>
 Changes original colors to gray colors pictured above
 </p>
 
@@ -157,11 +160,12 @@ node index.j grayscale
 </a>
 
 <br>
-<p align="center">![alt tag](img/invert-bitmap.bmp)
-![alt tag](img/randbmpOne.bmp)
-![alt tag](img/bluescale-bitmap.bmp)
-![alt tag](img/grayscale-bitmap.bmp)
-
+<p align="center">
+<img src="img/invert-bitmap.bmp">
+<img src="img/randbmpOne.bmp">
+<img src="img/bluescale-bitmap.bmp">
+<img src="img/grayscale-bitmap.bmp">
+<br>
 Command will print a inverted, random color version, bluescale, and  grayscale version of original image.   
    _**Random image may be different than shown above_
 </p>
