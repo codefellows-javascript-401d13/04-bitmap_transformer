@@ -14,10 +14,10 @@ ___
   * [Installation](#Installation)
   * [How to Use](#usage)
    * [Inverted bmp Example & command](#invert)
-   * [Radom bmp  Example & command](#random)
+   * [Radom bmp  Examples & command](#random)
    * [Bluescale bmp  Example & command](#blue) 
    * [Grayscale bmp  Example & command](#gray)
-   * [All at once & command](#all) 
+   * [All at once command](#all) 
    
   --
   
@@ -172,5 +172,5 @@ Command will print a inverted, random color version, bluescale, and  grayscale v
 ~~~~
 node index.js invert random bluescale grayscale
 ~~~~
-<br><br><br>
+<br><br>
 [Back to the top](#top)
