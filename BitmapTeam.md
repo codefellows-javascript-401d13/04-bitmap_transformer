@@ -72,6 +72,7 @@ How to use Bitmap Transformer
 <br>
 
 **This application will transform your an 8-bit color bitmap file into an inverted, bluescale, grayscale or a random colors version. Below are examples and commands to run the process.**
+
 <br>
 <br>
 
@@ -103,11 +104,12 @@ node index.js invert
 <br>
 <p align="center">
 <img src="img/randbmpOne.bmp">
-<img src="img/randbmpTwo.bmp">			
+<img src="img/randbmpTwo.bmp">		
 <img src="img/randbmpthree.bmp">
 <img src="img/randbmpfour.bmp">   
 <br>
- A new version with random colors will be created. Pictures above are examples of possible versions. **versions may repeat</p>
+ A new version with random colors will be created. Pictures above are examples of possible versions. **versions may repeat
+ </p>
 <br>
 
 ***In the primary repository, enter the following command:***
@@ -125,7 +127,8 @@ node index.js random
 <p align="center">
 <img src="img/bluescale-bitmap.bmp">
 <br>
-Changes original colors to blue colors pictured above</p>
+Changes original colors to blue colors pictured above
+</p>
 
 <br>
 ***In the primary repository, enter the following command:***
