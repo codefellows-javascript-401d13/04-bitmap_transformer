@@ -14,10 +14,10 @@ ___
   * [Installation](#Installation)
   * [How to Use](#usage)
    * [Inverted bmp Example & command](#invert)
-   * [Radom bmp  Example & command](#random)
+   * [Radom bmp  Examples & command](#random)
    * [Bluescale bmp  Example & command](#blue) 
    * [Grayscale bmp  Example & command](#gray)
-   * [All at once & command](#all) 
+   * [All at once command](#all) 
    
   --
   
@@ -66,7 +66,7 @@ How to use Bitmap Transformer
 <a name="usage">
 ###Original Bitmap</a>
 <br>
-<center>![alt tag](img/palette-bitmap.bmp)</center>
+<p align="center">![alt tag](img/palette-bitmap.bmp)</p>
 
 <br>
 
@@ -80,11 +80,11 @@ How to use Bitmap Transformer
 </a>
 
 <br>
-<center>![alt tag](img/invert-bitmap.bmp)
+<p align="center">![alt tag](img/invert-bitmap.bmp)
 
 Inverses the colors of original image  
  (The inverse of a color is the most contrasting color of that color.) 
- </center>
+ </p>
  <br>
 ***In the primary repository, enter the following command:***
 
@@ -99,14 +99,14 @@ node index.js invert
 
 
 <br>
-<center>
-![alt tag](img/randbmpone.bmp)
-![alt tag](img/randbmptwo.bmp)
+<p align="center">
+![alt tag](img/randbmpOne.bmp)
+![alt tag](img/randbmpTwo.bmp)
 ![alt tag](img/randbmpthree.bmp)
 ![alt tag](img/randbmpfour.bmp)
 
 
- A new version with random colors will be created. Pictures above are examples of possible versions. **versions may repeat</center>
+ A new version with random colors will be created. Pictures above are examples of possible versions. **versions may repeat</p>
 <br>
 
 ***In the primary repository, enter the following command:***
@@ -121,9 +121,9 @@ node index.js random
 </a>
 
 <br>
-<center>![alt tag](img/bluescale-bitmap.bmp)
+<p align="center">![alt tag](img/bluescale-bitmap.bmp)
 
-Changes original colors to blue colors pictured above</center>
+Changes original colors to blue colors pictured above</p>
 
 <br>
 ***In the primary repository, enter the following command:***
@@ -137,9 +137,10 @@ node index.js bluescale
 ###Grayscale Bitmap Example
 </a>
 <br>
-<center>![alt tag](img/grayscale-bitmap.bmp)
+<p align="center">![alt tag](img/grayscale-bitmap.bmp)
 
-Changes original colors to gray colors pictured above</center>
+Changes original colors to gray colors pictured above
+</p>
 
 <br>
 
@@ -156,14 +157,14 @@ node index.j grayscale
 </a>
 
 <br>
-<center>![alt tag](img/invert-bitmap.bmp)
-![alt tag](img/randbmpone.bmp)
+<p align="center">![alt tag](img/invert-bitmap.bmp)
+![alt tag](img/randbmpOne.bmp)
 ![alt tag](img/bluescale-bitmap.bmp)
 ![alt tag](img/grayscale-bitmap.bmp)
 
 Command will print a inverted, random color version, bluescale, and  grayscale version of original image.   
    _**Random image may be different than shown above_
-</center>
+</p>
 
 <br>
 ***In the primary repository, enter the following command:***
@@ -171,5 +172,5 @@ Command will print a inverted, random color version, bluescale, and  grayscale v
 ~~~~
 node index.js invert random bluescale grayscale
 ~~~~
-<br><br><br>
+<br><br>
 [Back to the top](#top)
