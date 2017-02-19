@@ -169,8 +169,8 @@ node index.j grayscale
 <img src="img/bluescale-bitmap.bmp">
 <img src="img/grayscale-bitmap.bmp">
 <br>
-Command will print a inverted, random color version, bluescale, and  grayscale version of original image.   
-   _**Random image may be different than shown above_
+Command will print a inverted, random color version, bluescale, and  grayscale version of original image.
+
 </p>
 
 <br>
