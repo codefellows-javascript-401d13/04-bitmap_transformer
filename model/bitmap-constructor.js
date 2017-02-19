@@ -52,8 +52,11 @@ Bitmap.blueTransform = function blueTransform(color) {
   }
   return [255, blue(color[1], .5), blue(color[2], .5), color[3]];
 };
+
 Bitmap.grayTransform = function grayTransform(color) {
   let maxColor = color.reduce((max, channel) => Math.max(max, channel), 0);
   let grayLevel = Math.round(maxColor * .7);
   return [ grayLevel, grayLevel, grayLevel, color[3] ];
 };
+
+Bitmap.colorTransforms = [ 'invertTransform', 'blueTransform', 'grayTransform' ];
