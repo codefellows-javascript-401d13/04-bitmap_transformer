@@ -1,6 +1,6 @@
 'use strict';
 
-const Bitmap = module.exports = function Bitmap(buffer){
+const Bitmap = module.exports = function Bitmap(buffer, callback){
   this.size = buffer.readInt32LE(2);
   this.imageStart = buffer.readInt32LE(10);
   this.headerSize = buffer.readInt32LE(14);
@@ -20,6 +20,7 @@ const Bitmap = module.exports = function Bitmap(buffer){
   }
   this.color = bitmapColorArray;
   this.pixel = buffer.toString('hex', this.imageStart, this.imageStart + this.imageSize);
+  if(callback) callback(null, this);
 };
 
 Bitmap.colorMapToString = function(array) {
