@@ -1,7 +1,7 @@
 'use strict';
 
-// const fs = require('fs');
 const fileHelper = require('./lib/bitmap-file-helper.js');
-// const Bitmap = require('./model/bitmap-constructor.js');
 
-fileHelper(`${__dirname}/img/palette-bitmap.bmp`, 'green', 'hello');
+fileHelper(`${__dirname}/img/palette-bitmap.bmp`, 'palette', 'invertTransform');
+fileHelper(`${__dirname}/img/palette-bitmap.bmp`, 'palette', 'grayTransform');
+fileHelper(`${__dirname}/img/palette-bitmap.bmp`, 'palette', 'blueTransform');
