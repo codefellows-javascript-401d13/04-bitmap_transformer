@@ -2,4 +2,5 @@
 
 const transform = require('./model/colorconst.js');
 
-transform.invert('pallette-bitmap.bmp', 'inverted-bitmap.bmp');
+//transform.invert('pallette-bitmap.bmp', 'inverted-bitmap.bmp');
+transform.random('pallette-bitmap.bmp', 'random-bitmap.bmp');
