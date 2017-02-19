@@ -94,12 +94,11 @@ Inverses the colors of original image
 ~~~~
 node index.js invert
 ~~~~
+<br><br>
 
-<br>
 <a name="random">
 ###Random Bitmap Examples
 </a>
-
 
 <br>
 <p align="center">
@@ -122,7 +121,6 @@ node index.js random
 <a name="blue">
 ###Bluescale Bitmap Example
 </a>
-
 <br>
 <p align="center">
 <img src="img/bluescale-bitmap.bmp">
