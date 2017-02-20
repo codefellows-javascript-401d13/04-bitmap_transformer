@@ -24,4 +24,5 @@ Use this app by opening your favorite Terminal and running these commands:
     -      node bitmap.js invertTransform
 
 More transformations are to come!
+<br>
 ⒸCodeFellows 2017 Team Bad Hair Day
