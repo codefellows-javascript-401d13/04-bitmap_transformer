@@ -8,7 +8,7 @@ Members:
 # Purpose of This App
 
   - Taking a colored 8-bit bitmap file and transforming it to grayscale, bluescale, and inverting the given original image shown below.
-  - ![alt tag](../img/palette-bitmap.bmp)
+  - ![alt tag](./img/palette-bitmap.bmp)
 
 
 Transformations:
