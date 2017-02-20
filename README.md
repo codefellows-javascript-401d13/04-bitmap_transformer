@@ -1,7 +1,5 @@
 # Bitmap Transformations
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
-
 Members:
   - Remil Marzan, Brian Alspach, & Cayla Zabel
 
@@ -12,18 +10,18 @@ Members:
 
 Transformations:
   - Greyscale Transformation:
-  -     grayTransform
+    -     grayTransform
   - Blue Transformation:
-  -     blueTransform
+    -     blueTransform
   - Inverted Transformation:
-  -     invertTransform
+    -     invertTransform
 
 Use this app by opening your favorite Terminal and running these commands:
 - node bitmap.js [transform(s)]
  - Examples:
-  -     node bitmap.js grayTransform
-  -     node bitmap.js blueTransform
-  -      node bitmap.js invertTransform
+    -     node bitmap.js grayTransform
+    -     node bitmap.js blueTransform
+    -      node bitmap.js invertTransform
 
 More transformations are to come!
 ⒸCodeFellows 2017 Team Bad Hair Day
