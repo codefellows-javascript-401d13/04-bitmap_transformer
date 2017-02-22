@@ -26,3 +26,5 @@ Use this app by opening your favorite Terminal and running these commands:
 More transformations are to come!
 <br>
 ⒸCodeFellows 2017 Team Bad Hair Day
+
+test for auth
